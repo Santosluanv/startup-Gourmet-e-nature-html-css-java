@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="theme-color" content="#090909">
+
+    <meta name="description"
+        content="Gourmet & Nature — sobremesas e delícias gourmet em Planaltina, DF. Faça seu pedido pelo WhatsApp.">
+
+    <title>Gourmet & Nature | Sabores Especiais</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- CABEÇALHO -->
+
+    <header class="site-header">
+
+        <div class="container header-inner">
+
+            <a class="brand" href="#inicio">
+                <span class="brand-main">GOURMET</span>
+                <span class="brand-amp">&</span>
+                <span class="brand-sub">NATURE</span>
+            </a>
+
+            <button class="menu-toggle" id="menu-toggle"
+                aria-label="Abrir menu" aria-expanded="false">
+                ☰
+            </button>
+
+            <nav class="nav" id="main-nav">
+
+                <a href="#inicio">Início</a>
+                <a href="#cardapio">Cardápio</a>
+                <a href="#sobre">Nossa essência</a>
+                <a href="#contato">Contato</a>
+
+            </nav>
+
+            <button class="cart-trigger" id="open-cart">
+                Carrinho
+                <span class="cart-count" id="cart-count">0</span>
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <!-- APRESENTAÇÃO -->
+
+    <main>
+
+        <section class="hero" id="inicio">
+
+            <div class="hero-content">
+
+                <p class="eyebrow">
+                    SABORES ESPECIAIS · PLANALTINA, DF
+                </p>
+
+                <h1>
+                    Seu momento merece<br>
+                    <em>um sabor especial.</em>
+                </h1>
+
+                <p class="hero-copy">
+                    Sobremesas e delícias gourmet para transformar
+                    pequenos momentos em boas lembranças.
+                </p>
+
+                <div class="hero-actions">
+
+                    <a href="#cardapio" class="button button-gold">
+                        Conheça nosso cardápio
+                    </a>
+
+                    <a href="https://wa.me/5561998649281"
+                        target="_blank"
+                        rel="noopener"
+                        class="button button-outline">
+                        Fale conosco
+                    </a>
+
+                </div>
+
+                <div class="hero-note">
+                    FEITO COM CARINHO, PENSADO EM CADA DETALHE
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- CARDÁPIO -->
+
+        <section class="menu-section section" id="cardapio">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <p class="eyebrow">
+                        ESCOLHA O SEU FAVORITO
+                    </p>
+
+                    <h2>
+                        Nosso <em>cardápio</em>
+                    </h2>
+
+                    <p>
+                        Encontre seu próximo sabor favorito.
+                        Adicione ao carrinho e envie seu pedido pelo WhatsApp.
+                    </p>
+
+                </div>
+
+
+                <div class="product-grid">
+
+
+                    <!-- PRODUTO 1 -->
+
+                    <article class="product-card">
+
+                        <div class="product-image">
+
+                            <img src="./imagens/chocolate.jpeg"
+                                alt="Ninho com Nutella">
+
+                            <span class="image-fallback">G&N</span>
+
+                        </div>
+
+                        <div class="product-details">
+
+                            <p class="product-kicker">
+                                CLÁSSICO DA CASA
+                            </p>
+
+                            <h3>Ninho com Nutella</h3>
+
+                            <p class="product-description">
+                                Uma combinação cremosa para quem ama sabores marcantes.
+                            </p>
+
+                            <div class="product-bottom">
+
+                                <strong>R$ 13,99</strong>
+
+                                <button class="add-button"
+                                    data-product="ninho">
+                                    Adicionar +
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- PRODUTO 2 -->
+
+                    <article class="product-card">
+
+                        <div class="product-image">
+
+                            <img src="./imagens/oreo.jpeg"
+                                alt="Chocolate branco e Oreo">
+
+                            <span class="image-fallback">G&N</span>
+
+                        </div>
+
+                        <div class="product-details">
+
+                            <p class="product-kicker">
+                                COMBINAÇÃO ESPECIAL
+                            </p>
+
+                            <h3>Chocolate branco e Oreo</h3>
+
+                            <p class="product-description">
+                                A suavidade do chocolate branco com o toque crocante de Oreo.
+                            </p>
+
+                            <div class="product-bottom">
+
+                                <strong>R$ 13,99</strong>
+
+                                <button class="add-button"
+                                    data-product="oreo">
+                                    Adicionar +
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- PRODUTO 3 -->
+
+                    <article class="product-card">
+
+                        <div class="product-image">
+
+                            <img src="./imagens/uva.jpeg"
+                                alt="Nutella e uva">
+
+                            <span class="image-fallback">G&N</span>
+
+                        </div>
+
+                        <div class="product-details">
+
+                            <p class="product-kicker">
+                                SABOR IRRESISTÍVEL
+                            </p>
+
+                            <h3>Nutella e uva</h3>
+
+                            <p class="product-description">
+                                Uma mistura deliciosa que une chocolate e frescor da fruta.
+                            </p>
+
+                            <div class="product-bottom">
+
+                                <strong>R$ 13,99</strong>
+
+                                <button class="add-button"
+                                    data-product="uva">
+                                    Adicionar +
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+                <p class="menu-footnote">
+                    Valores em reais. Disponibilidade confirmada pelo atendimento.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- SOBRE A MARCA -->
+
+        <section class="brand-section section" id="sobre">
+
+            <div class="container brand-panel">
+
+                <div class="brand-mark">
+                    G<span>&</span>N
+                </div>
+
+                <div class="brand-copy">
+
+                    <p class="eyebrow">
+                        GOURMET & NATURE
+                    </p>
+
+                    <h2>
+                        Mais que uma sobremesa.<br>
+                        <em>Um carinho em forma de sabor.</em>
+                    </h2>
+
+                    <p>
+                        Selecionamos combinações especiais para adoçar
+                        o seu dia. Faça seu pedido com praticidade e
+                        escolha receber em casa ou retirar com a gente.
+                    </p>
+
+                    <a class="text-link"
+                        href="https://www.instagram.com/gourmetenature/"
+                        target="_blank"
+                        rel="noopener">
+
+                        Acompanhe no Instagram ↗
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- INFORMAÇÕES DA LOJA -->
+
+        <section class="info-section section" id="contato">
+
+            <div class="container info-grid">
+
+                <div>
+
+                    <p class="eyebrow">
+                        FALE COM A GENTE
+                    </p>
+
+                    <h2>
+                        Seu pedido começa<br>
+                        <em>por aqui.</em>
+                    </h2>
+
+                    <p class="info-intro">
+                        Estamos em Estância, Planaltina – DF.
+                    </p>
+
+                </div>
+
+
+                <div class="info-card">
+
+                    <span class="info-icon">◷</span>
+
+                    <h3>Atendimento</h3>
+
+                    <p>
+                        Das 8h às 18h.
+
+                        <small>
+                            Consulte os dias de funcionamento pelo WhatsApp.
+                        </small>
+                    </p>
+
+                </div>
+
+
+                <div class="info-card">
+
+                    <span class="info-icon">⌖</span>
+
+                    <h3>Entrega e retirada</h3>
+
+                    <p>
+                        Entrega com taxa de R$ 5,00 ou retirada em Estância.
+                    </p>
+
+                </div>
+
+
+                <div class="info-card">
+
+                    <span class="info-icon">◇</span>
+
+                    <h3>Pagamento</h3>
+
+                    <p>
+                        Pix, dinheiro, cartão ou link de pagamento.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- RODAPÉ -->
+
+    <footer class="footer">
+
+        <div class="container footer-inner">
+
+            <a class="brand footer-brand" href="#inicio">
+
+                <span class="brand-main">GOURMET</span>
+                <span class="brand-amp">&</span>
+                <span class="brand-sub">NATURE</span>
+
+            </a>
+
+            <p>
+                Sabores especiais para os seus melhores momentos.
+            </p>
+
+            <div class="footer-links">
+
+                <a href="https://wa.me/5561998649281"
+                    target="_blank"
+                    rel="noopener">
+                    WhatsApp
+                </a>
+
+                <a href="https://www.instagram.com/gourmetenature/"
+                    target="_blank"
+                    rel="noopener">
+                    Instagram
+                </a>
+
+            </div>
+
+            <small>
+                © <span id="year"></span>
+                Gourmet & Nature. Todos os direitos reservados.
+            </small>
+
+        </div>
+
+    </footer>
+
+
+    <!-- CARRINHO DE COMPRAS -->
+
+    <div class="cart-overlay"
+        id="cart-overlay"
+        aria-hidden="true">
+
+        <section class="cart-drawer"
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="cart-title">
+
+
+            <div class="cart-header">
+
+                <div>
+
+                    <p class="eyebrow">SEU PEDIDO</p>
+
+                    <h2 id="cart-title">
+                        Meu carrinho
+                    </h2>
+
+                </div>
+
+                <button class="icon-button"
+                    id="close-cart"
+                    aria-label="Fechar carrinho">
+                    ×
+                </button>
+
+            </div>
+
+
+            <div class="cart-items" id="cart-items">
+
+                <p class="empty-cart">
+                    Seu carrinho está vazio.
+                </p>
+
+            </div>
+
+
+            <!-- DADOS DO CLIENTE -->
+
+            <form class="checkout-form" id="checkout-form">
+
+                <h3>Como podemos entregar?</h3>
+
+                <div class="choice-row">
+
+                    <label>
+                        <input type="radio"
+                            name="fulfillment"
+                            value="Entrega"
+                            checked>
+                        Entrega
+                    </label>
+
+                    <label>
+                        <input type="radio"
+                            name="fulfillment"
+                            value="Retirada">
+                        Retirada
+                    </label>
+
+                </div>
+
+
+                <div class="form-field" id="address-field">
+
+                    <label for="customer-address">
+                        Endereço para entrega
+                    </label>
+
+                    <input type="text"
+                        id="customer-address"
+                        name="address"
+                        placeholder="Rua, número, bairro e complemento">
+
+                </div>
+
+
+                <div class="form-field">
+
+                    <label for="customer-name">
+                        Seu nome
+                    </label>
+
+                    <input type="text"
+                        id="customer-name"
+                        name="name"
+                        placeholder="Como podemos chamar você?"
+                        autocomplete="name"
+                        required>
+
+                </div>
+
+
+                <div class="form-field">
+
+                    <label for="customer-phone">
+                        Seu telefone
+                    </label>
+
+                    <input type="tel"
+                        id="customer-phone"
+                        name="phone"
+                        placeholder="(61) 99999-9999">
+
+                </div>
+
+
+                <div class="form-field">
+
+                    <label for="payment-method">
+                        Forma de pagamento
+                    </label>
+
+                    <select id="payment-method"
+                        name="payment">
+
+                        <option>Pix</option>
+                        <option>Dinheiro</option>
+                        <option>Cartão</option>
+                        <option>Link de pagamento</option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="form-field">
+
+                    <label for="order-notes">
+                        Observações
+                    </label>
+
+                    <textarea id="order-notes"
+                        name="notes"
+                        rows="2"
+                        placeholder="Referência do endereço, troco, preferências...">
+                    </textarea>
+
+                </div>
+
+            </form>
+
+
+            <!-- RESUMO DO PEDIDO -->
+
+            <div class="cart-summary">
+
+                <div>
+
+                    <span>Subtotal</span>
+
+                    <strong id="subtotal">
+                        R$ 0,00
+                    </strong>
+
+                </div>
+
+
+                <div>
+
+                    <span>Entrega</span>
+
+                    <strong id="delivery-value">
+                        R$ 5,00
+                    </strong>
+
+                </div>
+
+
+                <div class="total-row">
+
+                    <span>Total</span>
+
+                    <strong id="cart-total">
+                        R$ 0,00
+                    </strong>
+
+                </div>
+
+
+                <button class="button button-gold checkout-button"
+                    id="checkout-button"
+                    type="button">
+
+                    Enviar pedido pelo WhatsApp
+
+                </button>
+
+                <p class="secure-note">
+                    O pedido será enviado para confirmação pelo WhatsApp.
+                    O envio não representa pagamento ou confirmação automática.
+                </p>
+
+            </div>
+
+        </section>
+
+    </div>
+
+
+    <!-- AVISOS DO SITE -->
+
+    <div class="toast"
+        id="toast"
+        role="status"
+        aria-live="polite">
+    </div>
+
+
+</body>
+</html>
